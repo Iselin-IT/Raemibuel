@@ -5,13 +5,13 @@
 # Rämibühl
 
 ## Timetables
-[RG Foyer](https://iselin-it.github.io/Raemibuel/Timetables/RG_Foyer.html)
+[RG Foyer](https://iselin-it.github.io/Raemibuehl/Timetables/RG_Foyer.html)
 
-[RG Lehrerzimmer](https://iselin-it.github.io/Raemibuel/Timetables/RG_Lehrerzimmer.html)
+[RG Lehrerzimmer](https://iselin-it.github.io/Raemibuehl/Timetables/RG_Lehrerzimmer.html)
 
-[LG Foyer / Lehrerzimmer](https://iselin-it.github.io/Raemibuel/Timetables/LG_Foyer_Lehrerzimmer.html)
+[LG Foyer / Lehrerzimmer](https://iselin-it.github.io/Raemibuehl/Timetables/LG_Foyer_Lehrerzimmer.html)
 
-[NW Foyer](https://iselin-it.github.io/Raemibuel/Timetables/NW_Foyer.html)
+[NW Foyer](https://iselin-it.github.io/Raemibuehl/Timetables/NW_Foyer.html)
 
 
 
