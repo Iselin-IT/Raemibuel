@@ -1,5 +1,5 @@
 
-<img src="https://www.rgzh.ch/themes/AK/svg/rb/lion.svg" align="left" height="100" width="100" >
+<img src="https://www.rgzh.ch/themes/AK/svg/rb/lion.svg" align="right" height="100" width="100" >
 <br>
 
 # Rämibül
