@@ -1,7 +1,8 @@
 
 <img src="https://www.rgzh.ch/themes/AK/svg/rb/lion.svg" align="left" height="100" width="100" >
 <br>
-# Rämibül 
+
+# Rämibül
 
 ## Timetables
 [RG Foyer](https://iselin-it.github.io/Raemibuel/Timetables/RG_Foyer.html)
@@ -12,5 +13,5 @@
 
 
 ## Refline
-Refline implementation 
+Refline Implementation 
 https://rgzh.ch/offene-stellen
