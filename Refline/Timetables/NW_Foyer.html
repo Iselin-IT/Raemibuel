@@ -1,0 +1,90 @@
+<!--
+   Prowise Display 86 Zoll 16:9 Auflösung 3840x2160
+
+   RG-Foyer: (Heute, Morgen, Übermorgen)
+   Heute: https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=today
+   Morgen: https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=tomorrow
+   Übermorgen https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=dayAfterTomorrow
+    -->
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="refresh" content="7200">
+      <style>
+         body {
+         background-color: #000;
+         }
+         iframe {
+
+         //width: 1280px;
+         width: 985px;
+
+         /* height: 2160px; */
+         height: 1640px;
+         position: relative;
+
+         -webkit-transform: scale(1.3, 1.3);
+         -o-transform: scale(1.3, 1.3);
+         -ms-transform: scale(1.3, 1.3);
+         transform: scale(1.3, 1.3);
+
+         -moz-transform-origin: top left;
+         -webkit-transform-origin: top left;
+         -o-transform-origin: top left;
+         -ms-transform-origin: top left;
+         transform-origin: top left;
+         }
+
+
+         /* hide scrollbar but allow scrolling */
+         body {
+         -ms-overflow-style: none; /* for Internet Explorer, Edge */
+         scrollbar-width: none; /* for Firefox */
+         overflow-y: scroll;
+         }
+         body::-webkit-scrollbar {
+         display: none; /* for Chrome, Safari, and Opera */
+         }
+      </style>
+      <title>Foyer</title>
+   </head>
+   <body>
+      <div>
+         <div id="screenContent" style="visibility:hidden;">
+            <iframe id="frame1" style="position: absolute; top:0; left: 0"      src="https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame2" style="position: absolute; top:0; left: 1280px"  src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame3" style="position: absolute; top:0; left: 2560px" src="https://intranet.tam.ch/krm/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+         </div>
+      </div>
+      <script>
+         //prettier loading of content
+         window.addEventListener("load", function () {
+           document.getElementById('screenContent').style.visibility = 'visible';
+         });
+
+         //lz foyer2 fix cut
+         var frame1 = document.getElementById('frame1');
+
+         frame1.addEventListener("load", function() {
+           frame1.style.height = "1660px";
+         })
+
+         //lz foyer2 fix cut
+         var frame2 = document.getElementById('frame2');
+
+         frame2.addEventListener("load", function() {
+           frame2.style.height = "1660px";
+         })
+         //lz foyer3 fix cut
+         var frame3 = document.getElementById('frame3');
+
+         frame3.addEventListener("load", function() {
+           frame3.style.height = "1660px";
+         })
+
+      </script>
+   </body>
+</html>
