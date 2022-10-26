@@ -2,7 +2,7 @@
 <img src="https://www.rgzh.ch/themes/AK/svg/rb/lion.svg" align="right" height="100" width="100" >
 <br>
 
-# Rämibül
+# Rämibühl
 
 ## Timetables
 [RG Foyer](https://iselin-it.github.io/Raemibuel/Timetables/RG_Foyer.html)
