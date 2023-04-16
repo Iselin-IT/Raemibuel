@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+p, br {
+    mso-data-placement: same-cell;
+}
+
+td {
+    font-family: "Open Sans", sans-serif;
+}
+
+table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+tr {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+td span.title {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.cell-title {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+thead {
+    display: none;
+}
+
+    </style>
+    <meta charset="utf-8">
+    <title>Anmeldeformular für ZAP Beratungsgespräch</title>
+    <script>
+        window.onload = function () {
+            const table = document.getElementsByTagName('table')[0];
+            const headers = table.getElementsByTagName('th');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                for (let j = 0; j < cells.length; j++) {
+                    const cell = cells[j];
+                    if (cell.textContent.trim() === '') {
+                        cell.style.display = 'none';
+                    } else {
+                        const header = headers[j].textContent;
+                        cell.setAttribute('title', header);
+                        cell.innerHTML = '<div class="cell-title">' + header + '</div>' + cell.innerHTML;
+                    }
+                }
+            }
+
+
+
+            const leftAlignCheckbox = document.querySelector("#leftAlignCheckbox");
+            const tableCells = document.querySelectorAll("td");
+
+            leftAlignCheckbox.addEventListener("change", function () {
+                if (this.checked) {
+                    for (let i = 0; i < tableCells.length; i++) {
+                        tableCells[i].style.textAlign = "left";
+                    }
+                } else {
+                    for (let i = 0; i < tableCells.length; i++) {
+                        tableCells[i].style.textAlign = "";
+                    }
+                }
+            });
+
+
+        };
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <!-- <table> here -->
+</body>
+
+</html>
