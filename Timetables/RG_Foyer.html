@@ -54,12 +54,21 @@
    <body>
       <div>
          <div id="screenContent" style="visibility:hidden;">
+            <img id="centerImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transform: scale(1.5);" src="https://lh3.googleusercontent.com/p/AF1QipOtZDrNCOLBJhczB_Shw_GKqWGh_5u9BTSQAHTS=s680-w680-h510" />
+
             <iframe id="frame1" style="position: absolute; top:0; left: 0"      src="https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
             <iframe id="frame2" style="position: absolute; top:0; left: 1280px"  src="https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=tomorrow" frameborder="0" scrolling="no"></iframe>
             <iframe id="frame3" style="position: absolute; top:0; left: 2560px" src="https://intranet.tam.ch/krr/public/timetable/daily-class-schedule?dayShort=dayAfterTomorrow" frameborder="0" scrolling="no"></iframe>
          </div>
       </div>
       <script>
+
+
+        // Display the image after 5 seconds
+        setTimeout(function() {
+          document.getElementById('centerImage').style.display = 'block';
+        }, 5000);
+
          //prettier loading of content
          window.addEventListener("load", function () {
            document.getElementById('screenContent').style.visibility = 'visible';
