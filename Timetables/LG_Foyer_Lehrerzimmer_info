@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="refresh" content="600">
+      <style>
+         /* Existing CSS here... */
+         /* Add this for the image styling */
+         #image3 {
+            width: 2560px;
+            height: 4305px;
+            position: absolute;
+            top:0;
+            left: 2560px;
+            visibility: hidden;
+         }
+      </style>
+      <title>Foyer</title>
+   </head>
+   <body>
+      <div>
+         <div id="screenContent" style="visibility:hidden;">
+            <iframe id="frame1" src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=today" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame2" src="https://intranet.tam.ch/krl/public/timetable/daily-class-schedule?dayShort=tomorrow" frameborder="0" scrolling="no"></iframe>
+            <iframe id="frame3" src="https://www.lgr.ch/infoscreen" frameborder="0" scrolling="no"></iframe>
+            <img id="image3" src="info.png" alt="Info Image"/>
+         </div>
+      </div>
+      <script>
+          //prettier loading of content
+          window.addEventListener("load", function () {
+              document.getElementById('screenContent').style.visibility = 'visible';
+          });
+
+          var frame1 = document.getElementById('frame1');
+          frame1.addEventListener("load", function() {
+              frame1.style.height = "1659px";
+          });
+
+          var frame2 = document.getElementById('frame2');
+          frame2.addEventListener("load", function() {
+              frame2.style.height = "1659px";
+          });
+
+          // New visibility switching logic
+          var frame3 = document.getElementById('frame3');
+          var image3 = document.getElementById('image3');
+
+          setInterval(function() {
+              if (frame3.style.visibility !== 'hidden') {
+                  frame3.style.visibility = 'hidden';
+                  image3.style.visibility = 'visible';
+              } else {
+                  frame3.style.visibility = 'visible';
+                  image3.style.visibility = 'hidden';
+              }
+          }, 6000); // Every 6 Seconds
+      </script>
+
+   </body>
+</html>
