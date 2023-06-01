@@ -46,7 +46,7 @@
 
 
         #frame3, #image {
-          transition: visibility 2s, opacity 2s;
+          transition: visibility 4s, opacity 4s;
           opacity: 0;
         }
 
@@ -76,7 +76,7 @@
         window.addEventListener("load", function () {
           document.getElementById('screenContent').style.visibility = 'visible';
           switchContent(); // call the switch function immediately after page load
-          setInterval(switchContent, 5000); // Call the switchContent function every 5 seconds
+          setInterval(switchContent, 15000); // Call the switchContent function every 5 seconds
         });
 
         function switchContent() {
