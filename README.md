@@ -11,6 +11,8 @@
 
 [LG Foyer / Lehrerzimmer](https://iselin-it.github.io/Raemibuehl/Timetables/LG_Foyer_Lehrerzimmer.html)
 
+[LG Foyer / Lehrerzimmer - info](https://iselin-it.github.io/Raemibuehl/Timetables/LG_Foyer_Lehrerzimmer_info_5min.html)
+
 [NW Foyer](https://iselin-it.github.io/Raemibuehl/Timetables/NW_Foyer.html)
 
 
